@@ -5,17 +5,16 @@
  */
 package menu;
 
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
 /**
  *
  * @author Dani
  */
-public class Menu {
 
-    /**
-     * @param args the command line arguments
-     */
+public class Menu {
     public static void main(String[] args) {
         int option, num1, num2;
         String resp;
@@ -25,9 +24,11 @@ public class Menu {
         System.out.println("Ingrese el segundo numero a calcular:");
         num2=leer.nextInt();
         resp="N";
-        
+         
+
         
         do {
+           
         System.out.println("-------------------");
         System.out.println("MENU");
         System.out.println("-------------------");
@@ -46,17 +47,22 @@ public class Menu {
           case 1:
               
               System.out.println("La suma de los numeros es: "+suma (num1,num2));
+       LimpiarPantalla();
               break;
           case 2:
               System.out.println("La resta de los numeros es: "+ resta (num1,num2));
+           
               break;
           case 3:
               System.out.println("La multiplicacion de los numeros es: "+ multiplicacion (num1,num2));
+             
               break;
           case 4:
               System.out.println("La division de los numeros es: "+division (num1,num2));
+            
               break;
           case 5:
+              
               System.out.println("Esta seguro de salir? (S/N)");
               resp=leer.next();
               if (resp.equals("S")){
@@ -87,4 +93,18 @@ public class Menu {
     int division=num1/num2;
     return division;
     }
+    public static void limpiarAnt(){
+        try{
+            System.out.println("Presione enter para continuar...");
+            new java.util.Scanner(System.in).nextLine();
+
+            Robot limpiar = new Robot();
+            limpiar.keyPress(KeyEvent.VK_CONTROL);
+            limpiar.keyPress(KeyEvent.VK_L);
+            limpiar.keyRelease(KeyEvent.VK_CONTROL);
+            limpiar.keyRelease(KeyEvent.VK_L);
+            
+        }  catch (Exception e) {
+            System.out.println("Error al limpiar la pantalla"+e.getMessage());
+        }}
 }
