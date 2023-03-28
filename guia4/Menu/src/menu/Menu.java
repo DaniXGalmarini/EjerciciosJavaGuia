@@ -28,7 +28,7 @@ public class Menu {
 
         
         do {
-           
+ 
         System.out.println("-------------------");
         System.out.println("MENU");
         System.out.println("-------------------");
@@ -47,7 +47,7 @@ public class Menu {
           case 1:
               
               System.out.println("La suma de los numeros es: "+suma (num1,num2));
-       LimpiarPantalla();
+       
               break;
           case 2:
               System.out.println("La resta de los numeros es: "+ resta (num1,num2));
