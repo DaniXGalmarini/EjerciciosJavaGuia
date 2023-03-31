@@ -28,7 +28,7 @@ public class Ejercicio3Guia4 {
         //inicializar vector
         int[] vector= new int[tam];
         // cargar numeros
-        for (int i = 0; i < vector.length; i++) {
+        for (int i = 0; i < tam; i++) {
             System.out.println("Ingrese numero entero");
             vector[i]=leer.nextInt();                
         }
@@ -73,4 +73,4 @@ public class Ejercicio3Guia4 {
         
     }
     
-}
+
