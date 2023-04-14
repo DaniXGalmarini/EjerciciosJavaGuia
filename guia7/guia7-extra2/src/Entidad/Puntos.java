@@ -104,8 +104,8 @@ public class Puntos {
             }
             
         }
-        matriz[(int) this.x1-1][(int)this.y1-1]=" * ";
-        matriz[(int) this.x2-1][(int) this.y2-1]=" * ";
+        matriz[(int) this.x1-1][(int)this.y1-1]=" A ";
+        matriz[(int) this.x2-1][(int) this.y2-1]=" B ";
     
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz.length; j++) {

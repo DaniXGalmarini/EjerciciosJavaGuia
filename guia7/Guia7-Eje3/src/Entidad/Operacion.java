@@ -59,7 +59,7 @@ public class Operacion {
     }
     
     public void multiplicar(){
-        if (this.num2!=0){
+        if (this.num2!=0 || this.num1!=0){
             int multiplicacion=this.num1*this.num2;
             System.out.println("La multiplicacion de los numeros ingresados es: "+multiplicacion);
         } else {
@@ -75,7 +75,7 @@ public class Operacion {
             double division=numero1/numero2;
             System.out.println("La multiplicacion de los numeros ingresados es: "+division);
         } else {
-            System.out.println("El resultado es 0");
+            System.out.println("NO SE PUEDE DIVIDIR POR 0");
         }
         
     }

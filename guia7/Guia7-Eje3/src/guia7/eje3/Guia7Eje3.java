@@ -20,9 +20,9 @@ public class Guia7Eje3 {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);        
         Operacion op=new Operacion();
-        Operacion op2=new Operacion(5,6);
        
-        System.out.println("Bienvenido al calculo de circunferencia");
+       
+        System.out.println("Bienvenido al programa de Calculo");
         int option;
         
         do { System.out.println("MENU");
@@ -32,26 +32,28 @@ public class Guia7Eje3 {
             System.out.println("4-MULTIPLICAR");
             System.out.println("5-DIVIDIR");
             System.out.println("");
-            System.out.println("");
+            System.out.println("6-SALIR");
             System.out.println("INGRESE UNA OPCION");
             option=leer.nextInt();
             switch (option){
-                case 1: op.crearOperacion();
+                case 1:System.out.println("Los numeros de la operacion son "+1
+                case 2:System.out.println("Los numeros de la operacion son "+op.getNum1()+" "+op.getNum2()); 
+                    op.sumar();
                 break;
-                case 2: op.sumar();
+                case 3:System.out.println("Los numeros de la operacion son "+op.getNum1()+" "+op.getNum2());
+                    op.restar();
                 break;
-                case 3: op.restar();
+                case 4:System.out.println("Los numeros de la operacion son "+op.getNum1()+" "+op.getNum2()); 
+                    op.multiplicar();
                 break;
-                case 4: op.multiplicar();
-                break;
-                case 5: op.dividir();
+                case 5:System.out.println("Los numeros de la operacion 2 son "+op.getNum1()+" "+op.getNum2());
+                    op.dividir();
                 default:
                                           
             }
           
         }while (option<6);
-        
-        System.out.println("Los numeros de la operacion 2 son "+op2.getNum1()+" "+op2.getNum2());
+
     }
     
 }
