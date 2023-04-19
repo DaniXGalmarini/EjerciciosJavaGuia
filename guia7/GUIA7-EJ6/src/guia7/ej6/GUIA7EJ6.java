@@ -22,6 +22,9 @@ public class GUIA7EJ6 {
         Rectangulo r1=new Rectangulo(4,6);
         
         Rectangulo[] rectangulos= new Rectangulo[10];
+        
+        
+        
         System.out.println("El calculo del area es: "+r1.calcular_area());
     
         for (int i = 0; i < 10; i++) {

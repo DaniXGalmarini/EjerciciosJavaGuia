@@ -24,6 +24,12 @@ public class Guia8Ej1 {
      
      CuentaBancaria c1=sm.crearCuenta();
      
+     CuentaBancaria [] cuenta = new CuentaBancaria[4];
+        
+        cuenta[1]=sm.crearCuenta();
+     
+     
+     
      sm.ingresarSaldo(c1);
      sm.retirarSaldo(c1);
     sm.retiroRapido(c1);
