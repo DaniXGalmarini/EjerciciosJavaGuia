@@ -114,26 +114,3 @@ public class Fracciones {
     }
 }
 
-
-//public class Fraccion {
-//    public int n1, d1,n2, d2;
-//    
-//    
-//    public void sumar(int n1, int d1,int n2, int d2){
-//        
-//        int num, den, res=0;
-//        
-//        num=(n1*d2)+(n2*d1);
-//        den=d1*d2;
-//        if (num%den==0){
-//            res=num/den;
-//            System.out.println("la fraccion simplificada da: "+res);
-//        }else{
-//             System.out.println(num+"/"+den);
-//        }
-//       
-//        
-//    }
-//    
-//    
-//}

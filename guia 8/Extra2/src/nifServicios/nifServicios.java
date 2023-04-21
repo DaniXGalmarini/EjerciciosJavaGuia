@@ -45,27 +45,24 @@ public class nifServicios {
         for (int i = 0; i < 22; i++) {
             if (calculo==i){
                 x.setLetra(letra[i]);
-            }
-            
+            }         
         }
-        
-        
+
     }
-    
-    public void mostrar(NIF a){
-        System.out.println(a.getDni()+"-"+Character.toUpperCase(a.getLetra()));
+
+    public void mostrar(NIF a) {
+        System.out.println(a.getDni() + "-" + Character.toUpperCase(a.getLetra()));
     }
-    public void crearnif2(NIF x){
-        char [] lista= {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
-        
+
+    public void crearnif2(NIF x) {
+        char[] lista = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
         System.out.println("Ingrese DNI:");
         x.setDni(leer.nextLong());
-        int calculo=(int) (x.getDni())%23;
+        int calculo = (int) (x.getDni()) % 23;
         //int o =(int)(long)calculo;
         x.setLetra(lista[calculo]);
-            
-            
-        }
+
+    }
     
     
     

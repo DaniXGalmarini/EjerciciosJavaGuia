@@ -22,10 +22,14 @@ public class Extra2 {
         
         NIF n1= new NIF();
         NIF n2= new NIF();
+        NIF n3=new NIF();
         s1.crearNIF(n1);
         s1.mostrar(n1);
+        
         s1.crearNIF(n2);
         s1.mostrar(n2);
+        
+        s1.crearNIF(n3);
         
 
     }
