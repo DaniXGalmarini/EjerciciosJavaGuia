@@ -22,14 +22,22 @@ public class Ej1Guia9 {
         
         Cadena c1=new Cadena("astronauta");
         Cadena c2=new Cadena("murcielago");
-        sv.mostrarVocales(c1);
-        sv.mostrarVocales(c2);
+//        sv.mostrarVocales(c1);
+//        sv.mostrarVocales(c2);
+//        
+//        sv.invertirFrase(c2);
+//        sv.invertirFrase(c1);
+//        
+//        
+//        sv.vecesRepetido(c1, "t");
         
-        sv.invertirFrase(c2);
-        sv.invertirFrase(c1);
-        
-        
-        sv.vecesRepetido(c1, "t");
+//        sv.compararLongitud(c2, "pepito");
+//        sv.compararLongitud(c2, "murcielago");
+//        sv.compararLongitud(c2, "esternocleidomastoideo");
+         // sv.unirFrases(c2, "Volador");
+         // sv.reemplazar(c2, "*");
+          
+         System.out.println(sv.contiene(c2, "x"));
         
         }
     
