@@ -14,12 +14,15 @@ import java.awt.event.KeyEvent;
  */
 public class clear {
 public static void limpiarpantalla() throws AWTException {
-    Robot robot = new Robot();
-    
-    robot.delay(1100);
+    Robot robot;
+    robot = new Robot();
+   
+      
+    robot.delay(800);
     robot.keyPress(KeyEvent.VK_CONTROL);
     robot.keyPress(KeyEvent.VK_L);
     robot.keyRelease(KeyEvent.VK_CONTROL);
     robot.keyRelease(KeyEvent.VK_L);
+   
 }
 }

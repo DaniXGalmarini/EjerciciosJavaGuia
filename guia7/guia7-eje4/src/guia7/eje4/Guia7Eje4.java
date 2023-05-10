@@ -8,6 +8,8 @@ package guia7.eje4;
 import Entidad.Rectangulo;
 import Entidad.clear;
 import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 import java.util.Scanner;
 
 /**
@@ -35,7 +37,9 @@ public class Guia7Eje4 {
         int option;
         
         do { 
-             clear.limpiarpantalla();
+            Robot robot = new Robot();
+            clear.limpiarpantalla();
+            robot.delay(100);
             System.out.println("MENU");
             System.out.println("1-CALCULAR SUPERFICIE");
             System.out.println("2-CALCULAR EL PERIMETRO");
